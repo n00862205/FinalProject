@@ -20,6 +20,8 @@
 		EC3A65911CD01254007789B6 /* CategoryPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3A65901CD01254007789B6 /* CategoryPickerViewController.m */; };
 		EC3A65941CD01C3C007789B6 /* OrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3A65931CD01C3C007789B6 /* OrderCell.m */; };
 		EC3A65971CD029CF007789B6 /* OrderDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3A65961CD029CF007789B6 /* OrderDetailsViewController.m */; };
+		EC3A659A1CD04E2D007789B6 /* SubmitClaimTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3A65991CD04E2D007789B6 /* SubmitClaimTableViewController.m */; };
+		EC3A65A01CD05FDC007789B6 /* ClaimedOrders.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC3A659E1CD05FDC007789B6 /* ClaimedOrders.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,9 @@
 		EC3A65931CD01C3C007789B6 /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCell.m; sourceTree = "<group>"; };
 		EC3A65951CD029CF007789B6 /* OrderDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailsViewController.h; sourceTree = "<group>"; };
 		EC3A65961CD029CF007789B6 /* OrderDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailsViewController.m; sourceTree = "<group>"; };
+		EC3A65981CD04E2D007789B6 /* SubmitClaimTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitClaimTableViewController.h; sourceTree = "<group>"; };
+		EC3A65991CD04E2D007789B6 /* SubmitClaimTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitClaimTableViewController.m; sourceTree = "<group>"; };
+		EC3A659F1CD05FDC007789B6 /* ClaimedOrders.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClaimedOrders.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +112,15 @@
 				EC3A65781CD000A5007789B6 /* SecondViewController.h */,
 				EC3A65791CD000A5007789B6 /* SecondViewController.m */,
 				EC3A657B1CD000A5007789B6 /* Main.storyboard */,
+				EC3A659E1CD05FDC007789B6 /* ClaimedOrders.xcdatamodeld */,
 				EC3A658C1CD009B3007789B6 /* addOrderViewController.h */,
 				EC3A658D1CD009B3007789B6 /* addOrderViewController.m */,
 				EC3A658F1CD01254007789B6 /* CategoryPickerViewController.h */,
 				EC3A65901CD01254007789B6 /* CategoryPickerViewController.m */,
 				EC3A65951CD029CF007789B6 /* OrderDetailsViewController.h */,
 				EC3A65961CD029CF007789B6 /* OrderDetailsViewController.m */,
+				EC3A65981CD04E2D007789B6 /* SubmitClaimTableViewController.h */,
+				EC3A65991CD04E2D007789B6 /* SubmitClaimTableViewController.m */,
 				EC3A65921CD01C3C007789B6 /* OrderCell.h */,
 				EC3A65931CD01C3C007789B6 /* OrderCell.m */,
 				EC3A65891CD00165007789B6 /* Order.h */,
@@ -255,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC3A657A1CD000A5007789B6 /* SecondViewController.m in Sources */,
+				EC3A65A01CD05FDC007789B6 /* ClaimedOrders.xcdatamodeld in Sources */,
 				EC3A658E1CD009B3007789B6 /* addOrderViewController.m in Sources */,
+				EC3A659A1CD04E2D007789B6 /* SubmitClaimTableViewController.m in Sources */,
 				EC3A65941CD01C3C007789B6 /* OrderCell.m in Sources */,
 				EC3A658B1CD00165007789B6 /* Order.m in Sources */,
 				EC3A65741CD000A5007789B6 /* AppDelegate.m in Sources */,
@@ -414,6 +424,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EC3A659E1CD05FDC007789B6 /* ClaimedOrders.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC3A659F1CD05FDC007789B6 /* ClaimedOrders.xcdatamodel */,
+			);
+			currentVersion = EC3A659F1CD05FDC007789B6 /* ClaimedOrders.xcdatamodel */;
+			path = ClaimedOrders.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EC3A65641CD000A5007789B6 /* Project object */;
 }

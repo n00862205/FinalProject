@@ -50,6 +50,23 @@
     
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"SubmitClaim"]) {
+        
+        UINavigationController *navigationController = segue.destinationViewController;
+        SubmitClaimTableViewController *submitClaimTableViewController = [navigationController viewControllers][0];
+        submitClaimTableViewController.order = self.order;
+        submitClaimTableViewController.delegate = self;
+    }
+}
+
+- (void)SubmitClaimTableViewControllerDidCancel:(SubmitClaimTableViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.delegate OrderDetailsViewControllerDidCancel:self];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -57,9 +57,33 @@
     Order *order = _orders[indexPath.row];
     cell.orderDetail.text = order.order;
     cell.orderLocation.text = order.location;
-    cell.categoryImage.image = [UIImage imageNamed:@"Food"];
+    cell.categoryImage.image = [self imageForName:order.category];
     
     return cell;
+}
+
+- (UIImage *)imageForName:(NSString*)name
+{
+    if([name  isEqual: @"Food"]) {
+        return [UIImage imageNamed:@"Food"];
+    }
+    else if( [name  isEqual: @"Work"]){
+        //return [UIImage imageNamed:@""];
+    }
+    else if( [name  isEqual: @"Groceries"]){
+        //return [UIImage imageNamed:@""];
+    }
+    else if( [name  isEqual: @"Medicine"]){
+        //return [UIImage imageNamed:@""];
+    }
+    else if( [name  isEqual: @"Video Games"]){
+        //return [UIImage imageNamed:@""];
+    }
+    else {
+        //return [UIImage imageNamed:@""];
+    }
+    return nil;
+    
 }
 
 - (void)addOrderViewControllerDidCancel:(addOrderViewController *)controller

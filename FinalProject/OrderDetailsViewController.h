@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SubmitClaimTableViewController.h"
 #import "Order.h"
 
 @class OrderDetailsViewController;
