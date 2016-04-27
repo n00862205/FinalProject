@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Firebase/Firebase.h>
+#import "addOrderViewController.h"
+#import "OrderDetailsViewController.h"
+#import "Order.h"
+#import "OrderCell.h"
 
-@interface FirstViewController : UIViewController
 
+@interface FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *orderTableView;
+@property (strong, nonatomic) Firebase *myRootRef;
 
 @end
 
